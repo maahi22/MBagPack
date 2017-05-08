@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import MapKit
+
+
 
 class MapVC: UIViewController {
 
+    
+    
+    @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +37,24 @@ class MapVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func showRoute(_ sender: AnyObject) {
+        
+        
+        
+    }
 
+    @IBAction func currentLocation(_ sender: AnyObject) {
+        
+        
+        
+    }
+    
+    
+    
+}
+
+extension MapVC: MKMapViewDelegate{
+    
+    
+    
 }

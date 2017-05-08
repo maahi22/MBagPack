@@ -19,8 +19,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iFb-xo-dM7">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="iFb-xo-dM7">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="aIP-oP-d3g">
+                                        <rect key="frame" x="0.0" y="120" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aIP-oP-d3g" id="7uF-6f-DWW">
+                                            <frame key="frameInset" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="W58-wW-ZDW"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="HjZ-oi-73o"/>
@@ -51,12 +61,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tblViewTripList" destination="iFb-xo-dM7" id="3Jh-dl-bEz"/>
-                        <segue destination="dt8-pM-cci" kind="show" customClass="toItems" id="d11-0U-odm"/>
+                        <segue destination="dt8-pM-cci" kind="show" identifier="toShowItems" id="IpO-QJ-rXv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1629.5999999999999" y="-1778.8605697151427"/>
+            <point key="canvasLocation" x="1654" y="-1690"/>
         </scene>
         <!--Title-->
         <scene sceneID="Kwn-hu-eYa">
@@ -108,7 +118,7 @@
                     </items>
                 </navigationBar>
             </objects>
-            <point key="canvasLocation" x="2365.5999999999999" y="-1737.481259370315"/>
+            <point key="canvasLocation" x="2482" y="-1667"/>
         </scene>
         <!--Map-->
         <scene sceneID="p2x-0U-jCy">
@@ -134,18 +144,27 @@
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="vzD-qS-7BZ">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="Wdc-ne-35E">
+                            <barButtonItem image="location" id="Wdc-ne-35E">
                                 <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="currentLocation:" destination="QrL-F1-oVL" id="CPG-5W-8Z2"/>
+                                </connections>
                             </barButtonItem>
-                            <barButtonItem title="Item" id="mK3-yn-jQg">
+                            <barButtonItem image="route" id="mK3-yn-jQg">
                                 <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="showRoute:" destination="QrL-F1-oVL" id="Ssb-8L-enF"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="NEX-68-ZKX" id="360-Fj-c8r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uf1-TH-PSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3125.5999999999999" y="-1485.6071964017992"/>
+            <point key="canvasLocation" x="3562" y="-1641"/>
         </scene>
         <!--Add Items-->
         <scene sceneID="nBS-yL-rpf">
@@ -168,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2W-J8-sHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3130" y="-2133"/>
+            <point key="canvasLocation" x="3106" y="-2358"/>
         </scene>
         <!--Create List-->
         <scene sceneID="lxp-Dz-Bix">
@@ -308,6 +327,7 @@
     <resources>
         <image name="edit" width="20" height="20"/>
         <image name="location" width="20" height="26"/>
+        <image name="route" width="30" height="30"/>
         <image name="share" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>

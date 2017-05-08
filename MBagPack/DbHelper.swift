@@ -111,5 +111,32 @@ class DbHelper: NSObject {
     
     
     
-    
+    //Getting Data
+    public func getPlaceListFromDB() -> NSArray{
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.getContext()
+        let sort : NSSortDescriptor = NSSortDescriptor(key: "tripName", ascending: true)
+        
+        //create a fetch request, telling it about the entity
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PlaceList")
+        fetchRequest.sortDescriptors = [sort]
+        // Helpers
+        var result = [NSManagedObject]()
+        
+        do {
+            // Execute Fetch Request
+            let records = try context.fetch(fetchRequest)
+            
+            if let records = records as? [NSManagedObject] {
+                result = records
+            }
+            
+        } catch {
+            print("Unable to fetch managed objects for entity .")
+        }
+        
+        
+        return result as NSArray;
+        
+    }
 }

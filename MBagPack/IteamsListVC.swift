@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import CoreData
+
+
 
 class IteamsListVC: UIViewController {
 
+    
+    var ListManageobj : NSManagedObject!
     override func viewDidLoad() {
         super.viewDidLoad()
 
