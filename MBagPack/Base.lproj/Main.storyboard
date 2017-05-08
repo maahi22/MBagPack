@@ -37,19 +37,21 @@
                     </view>
                     <navigationItem key="navigationItem" title="Trip List" id="wcZ-XB-7xH">
                         <barButtonItem key="leftBarButtonItem" image="share" id="b8R-Rb-i73">
+                            <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="shareClick:" destination="BYZ-38-t0r" id="4vY-sC-u2o"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dsv-b2-ScM">
+                            <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="zKF-hj-kJ9" kind="show" id="nOG-8u-nwK"/>
+                                <segue destination="zKF-hj-kJ9" kind="show" identifier="toAddList" id="nOG-8u-nwK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tblViewTripList" destination="iFb-xo-dM7" id="3Jh-dl-bEz"/>
-                        <segue destination="dt8-pM-cci" kind="show" id="d11-0U-odm"/>
+                        <segue destination="dt8-pM-cci" kind="show" customClass="toItems" id="d11-0U-odm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -83,13 +85,15 @@
                     <navigationItem key="navigationItem" title="Title" id="h5i-ht-1jI">
                         <rightBarButtonItems>
                             <barButtonItem image="edit" id="DSC-VD-LqW">
+                                <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="xIj-68-pG2" kind="show" id="rDR-f6-HC9"/>
+                                    <segue destination="xIj-68-pG2" kind="show" identifier="toEdititems" id="rDR-f6-HC9"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="location" id="FIx-oo-na1">
+                                <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="QrL-F1-oVL" kind="show" id="Yo4-Nq-Gh2"/>
+                                    <segue destination="QrL-F1-oVL" kind="show" identifier="toShowMap" id="Yo4-Nq-Gh2"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -130,8 +134,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="vzD-qS-7BZ">
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="Wdc-ne-35E"/>
-                            <barButtonItem title="Item" id="mK3-yn-jQg"/>
+                            <barButtonItem title="Item" id="Wdc-ne-35E">
+                                <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                            <barButtonItem title="Item" id="mK3-yn-jQg">
+                                <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
@@ -153,7 +161,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Items" id="ef1-Mr-IyJ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="gZ9-Lp-Tw3"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="gZ9-Lp-Tw3">
+                            <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2W-J8-sHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,18 +185,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOy-yO-Wrs">
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="How many days" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JF4-YM-3PF">
+                                        <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="6rK-b9-rqX"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Temprature" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kzx-26-CXo">
+                                        <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="cn5-IE-qqV"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -199,6 +211,7 @@
                                             <segment title="Men"/>
                                             <segment title="Women"/>
                                         </segments>
+                                        <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="segmentChange:" destination="zKF-hj-kJ9" eventType="valueChanged" id="fSY-Y9-Y9M"/>
                                         </connections>
@@ -211,15 +224,17 @@
                                             <segment title="Bussiness"/>
                                             <segment title="Casual"/>
                                         </segments>
+                                        <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="segmentChange:" destination="zKF-hj-kJ9" eventType="valueChanged" id="d4F-gy-SsZ"/>
                                         </connections>
                                     </segmentedControl>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Trip Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bgi-Hj-Ao9">
+                                        <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="sSv-Ya-tdi"/>
                                         </constraints>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -253,8 +268,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Create List" id="EpA-YT-aIy">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qmS-Xv-gVl">
+                            <color key="tintColor" red="1" green="0.43629396190000003" blue="0.25122178989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="xIj-68-pG2" kind="show" id="g6S-gN-M7q"/>
+                                <segue destination="xIj-68-pG2" kind="show" identifier="toAddItems" id="g6S-gN-M7q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -295,6 +311,6 @@
         <image name="share" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="g6S-gN-M7q"/>
+        <segue reference="rDR-f6-HC9"/>
     </inferredMetricsTieBreakers>
 </document>
