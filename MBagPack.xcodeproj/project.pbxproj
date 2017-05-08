@@ -20,6 +20,7 @@
 		0FD2C7E01EC07A2A004253D1 /* IteamsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD2C7DF1EC07A2A004253D1 /* IteamsListVC.swift */; };
 		0FD2C7E21EC07A4C004253D1 /* EditLIstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD2C7E11EC07A4C004253D1 /* EditLIstVC.swift */; };
 		0FD2C7E51EC085C3004253D1 /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD2C7E41EC085C3004253D1 /* DbHelper.swift */; };
+		0FD2C7E91EC0FF98004253D1 /* addItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD2C7E81EC0FF98004253D1 /* addItemCell.swift */; };
 		27E747313F4A0E61FC70E386 /* Pods_MBagPackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B781A5A303F9197F6236C77 /* Pods_MBagPackUITests.framework */; };
 		4FCABB36133BE7842E191D06 /* Pods_MBagPack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CC192B330DCE413417B2E8 /* Pods_MBagPack.framework */; };
 		75DF08EC9655747B48D622BD /* Pods_MBagPackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B424C0D77844CCA7E48DB30 /* Pods_MBagPackTests.framework */; };
@@ -63,6 +64,7 @@
 		0FD2C7DF1EC07A2A004253D1 /* IteamsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IteamsListVC.swift; sourceTree = "<group>"; };
 		0FD2C7E11EC07A4C004253D1 /* EditLIstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLIstVC.swift; sourceTree = "<group>"; };
 		0FD2C7E41EC085C3004253D1 /* DbHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbHelper.swift; sourceTree = "<group>"; };
+		0FD2C7E81EC0FF98004253D1 /* addItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addItemCell.swift; sourceTree = "<group>"; };
 		30295342918DBC2CF6AA0F77 /* Pods-MBagPackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBagPackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBagPackTests/Pods-MBagPackTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4492CF5FD8BCA7477E05F7B3 /* Pods-MBagPack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBagPack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MBagPack/Pods-MBagPack.debug.xcconfig"; sourceTree = "<group>"; };
 		8B424C0D77844CCA7E48DB30 /* Pods_MBagPackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBagPackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,8 @@
 		0F0256D31EB38180008D50AC /* MBagPack */ = {
 			isa = PBXGroup;
 			children = (
+				0FD2C7E71EC0FF7B004253D1 /* Cell */,
+				0FD2C7E61EC0F544004253D1 /* pdf */,
 				0FD2C7E31EC085AC004253D1 /* Helper */,
 				0F0256D41EB38180008D50AC /* AppDelegate.swift */,
 				0F0256D61EB38180008D50AC /* ViewController.swift */,
@@ -166,6 +170,21 @@
 				0FD2C7E41EC085C3004253D1 /* DbHelper.swift */,
 			);
 			name = Helper;
+			sourceTree = "<group>";
+		};
+		0FD2C7E61EC0F544004253D1 /* pdf */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = pdf;
+			sourceTree = "<group>";
+		};
+		0FD2C7E71EC0FF7B004253D1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0FD2C7E81EC0FF98004253D1 /* addItemCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		8AEF32C09C746DBC567E9D7E /* Frameworks */ = {
@@ -477,6 +496,7 @@
 				0FD2C7E01EC07A2A004253D1 /* IteamsListVC.swift in Sources */,
 				0FD2C7DE1EC079CF004253D1 /* CreateListVC.swift in Sources */,
 				0FD2C7DC1EC079B3004253D1 /* MapVC.swift in Sources */,
+				0FD2C7E91EC0FF98004253D1 /* addItemCell.swift in Sources */,
 				0F0256DD1EB38180008D50AC /* MBagPack.xcdatamodeld in Sources */,
 				0F0256D51EB38180008D50AC /* AppDelegate.swift in Sources */,
 				0FD2C7E21EC07A4C004253D1 /* EditLIstVC.swift in Sources */,

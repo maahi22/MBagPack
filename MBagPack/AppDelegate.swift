@@ -28,6 +28,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //self.accessibilityNavigationStyle =
+        var navigationBarAppearace = UINavigationBar.appearance()
+        
+        navigationBarAppearace.tintColor = UIColor(red:255.0/255.0, green:111.0/255.0, blue:64.0/255.0, alpha:1.0)
+//        navigationBarAppearace.barTintColor = UIColor(red:0.76, green:0.40, blue:0.40, alpha:1.0)
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:255.0/255.0, green:111.0/255.0, blue:64.0/255.0, alpha:1.0)]
+   
+        
+        
         
         
         return true

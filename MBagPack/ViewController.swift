@@ -24,6 +24,12 @@ class ViewController: UIViewController,UIActionSheetDelegate,MFMailComposeViewCo
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        let navigationBarAppearace = UINavigationBar.appearance()
+//        navigationBarAppearace.tintColor = UIColor(red:255.0/255.0, green:111.0/255.0, blue:64.0/255.0, alpha:1.0)
+        
+        
+        
         if DbHelper.sharedInstance.getPlaceListFromDB().count > 0 {
             tripList = NSMutableArray(array: DbHelper.sharedInstance.getPlaceListFromDB() )as! NSMutableArray
             tblViewTripList .reloadData()
@@ -50,6 +56,7 @@ class ViewController: UIViewController,UIActionSheetDelegate,MFMailComposeViewCo
         let cancelActionButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
             print("Cancel")
         }
+    
         actionSheetControllerIOS8.addAction(cancelActionButton)
         
         let saveActionButton = UIAlertAction(title: "WhatsApp", style: .default)
@@ -87,6 +94,9 @@ class ViewController: UIViewController,UIActionSheetDelegate,MFMailComposeViewCo
             self.sendSMS(text: "hii");
         }
         actionSheetControllerIOS8.addAction(SMSButton)
+        
+        actionSheetControllerIOS8.view.tintColor =  UIColor(red:255.0/255.0, green:111.0/255.0, blue:64.0/255.0, alpha:1.0)
+
         
         self.present(actionSheetControllerIOS8, animated: true, completion: nil)
         
@@ -128,6 +138,8 @@ class ViewController: UIViewController,UIActionSheetDelegate,MFMailComposeViewCo
         }
     }
     
+    
+    //http://stackoverflow.com/questions/40887721/sending-an-email-from-swift-3
     func sendMail(text:String) {
         
         let mailComposeViewController = configuredMailComposeViewController()
