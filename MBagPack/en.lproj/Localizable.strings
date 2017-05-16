@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  MBagPack
+
+  Created by Maahi on 16/05/17.
+  Copyright © 2017 Maahi. All rights reserved.
+*/
+
+"cancelActionButton" = "Cancel";
+"EmailActionButton"  = "Email";
+"SMSActionButton"   = "SMS";
+"share"   = "Share";
+
+
+
+"navTitle1" = "Trip List";
+"navmap" = "Map";
+"navCreateList" = "Create List";
+
+
+
+//***
+
+

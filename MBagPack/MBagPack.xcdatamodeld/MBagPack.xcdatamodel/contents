@@ -1,17 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="CategoryList" syncable="YES">
-        <attribute name="categoryname" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="categoryType" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ItemList" inverseName="category" inverseEntity="ItemList" syncable="YES"/>
-        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlaceList" syncable="YES"/>
+    <entity name="CategoryItem1" syncable="YES">
+        <attribute name="gen_Man" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gen_Woman" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemCat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemCat_Ger" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Eng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Ger" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Ita" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Span" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="purpose" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="purpose_Buss" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="purpose_Leisure" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_Heigh" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_less" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_Medium" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temprature" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="CategoryItem2" syncable="YES">
+        <attribute name="gen_Man" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gen_Woman" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemCat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemCat_Ger" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Eng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Ger" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Ita" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Span" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="purpose" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="purpose_Buss" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="purpose_Leisure" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_Heigh" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_less" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_Medium" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temprature" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="CategoryItem3" syncable="YES">
+        <attribute name="gen_Man" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gen_Woman" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemCat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemCat_Ger" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Eng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Ger" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Ita" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Span" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="purpose" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="purpose_Buss" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="purpose_Leisure" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_Heigh" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_less" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_Medium" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temprature" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="CategoryItemList" syncable="YES">
+        <attribute name="gen_Man" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gen_Woman" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="itemCat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemCat_Ger" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Eng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Ger" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Ita" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName_Span" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="purpose" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="purpose_Buss" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="purpose_Leisure" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_Heigh" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_less" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temperature_Medium" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temprature" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryItemList" inverseName="item" inverseEntity="CategoryItemList" syncable="YES"/>
     </entity>
     <entity name="ItemList" syncable="YES">
         <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="category" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="CategoryList" inverseName="items" inverseEntity="CategoryList" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="CategoryItemList" syncable="YES"/>
     </entity>
     <entity name="PlaceList" syncable="YES">
         <attribute name="duration" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -24,8 +91,11 @@
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlaceList" inverseName="category" inverseEntity="PlaceList" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PlaceList" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="CategoryItem1" positionX="-45" positionY="54" width="128" height="285"/>
+        <element name="CategoryItem2" positionX="-18" positionY="162" width="128" height="285"/>
+        <element name="CategoryItem3" positionX="0" positionY="171" width="128" height="285"/>
+        <element name="CategoryItemList" positionX="18" positionY="180" width="128" height="300"/>
         <element name="ItemList" positionX="-54" positionY="-9" width="128" height="120"/>
-        <element name="CategoryList" positionX="-36" positionY="9" width="128" height="105"/>
+        <element name="PlaceList" positionX="-63" positionY="-18" width="128" height="165"/>
     </elements>
 </model>

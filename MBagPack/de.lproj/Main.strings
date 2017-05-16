@@ -1,0 +1,39 @@
+
+/* Class = "UISegmentedControl"; 8wW-3b-d6g.segmentTitles[0] = "Men"; ObjectID = "8wW-3b-d6g"; */
+"8wW-3b-d6g.segmentTitles[0]" = "Men";
+
+/* Class = "UISegmentedControl"; 8wW-3b-d6g.segmentTitles[1] = "Women"; ObjectID = "8wW-3b-d6g"; */
+"8wW-3b-d6g.segmentTitles[1]" = "Women";
+
+/* Class = "UITextField"; placeholder = "Trip Name"; ObjectID = "Bgi-Hj-Ao9"; */
+"Bgi-Hj-Ao9.placeholder" = "Trip Name";
+
+/* Class = "UINavigationItem"; title = "Create List"; ObjectID = "EpA-YT-aIy"; */
+"EpA-YT-aIy.title" = "Create List";
+
+/* Class = "UITextField"; placeholder = "How many days"; ObjectID = "JF4-YM-3PF"; */
+"JF4-YM-3PF.placeholder" = "How many days";
+
+/* Class = "UITextField"; placeholder = "Temprature"; ObjectID = "Kzx-26-CXo"; */
+"Kzx-26-CXo.placeholder" = "Temprature";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "Zo5-S2-gt2"; */
+"Zo5-S2-gt2.title" = "Title";
+
+/* Class = "UINavigationItem"; title = "Add Items"; ObjectID = "ef1-Mr-IyJ"; */
+"ef1-Mr-IyJ.title" = "Add Items";
+
+/* Class = "UISegmentedControl"; fRc-iJ-EKg.segmentTitles[0] = "Bussiness"; ObjectID = "fRc-iJ-EKg"; */
+"fRc-iJ-EKg.segmentTitles[0]" = "Bussiness";
+
+/* Class = "UISegmentedControl"; fRc-iJ-EKg.segmentTitles[1] = "Casual"; ObjectID = "fRc-iJ-EKg"; */
+"fRc-iJ-EKg.segmentTitles[1]" = "Casual";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "h5i-ht-1jI"; */
+"h5i-ht-1jI.title" = "Title";
+
+/* Class = "UINavigationItem"; title = "Map"; ObjectID = "vzD-qS-7BZ"; */
+"vzD-qS-7BZ.title" = "Map";
+
+/* Class = "UINavigationItem"; title = "Trip List"; ObjectID = "wcZ-XB-7xH"; */
+"wcZ-XB-7xH.title" = "Trip List";

@@ -15,6 +15,10 @@
 		0F0256E21EB38180008D50AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0256E01EB38180008D50AC /* LaunchScreen.storyboard */; };
 		0F0256ED1EB38180008D50AC /* MBagPackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0256EC1EB38180008D50AC /* MBagPackTests.swift */; };
 		0F0256F81EB38180008D50AC /* MBagPackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0256F71EB38180008D50AC /* MBagPackUITests.swift */; };
+		0F5D29F81ECB72A8004F3E7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F5D29F61ECB72A8004F3E7D /* Localizable.strings */; };
+		0F99B1A81EC9CBB100EE42E9 /* CategoryItem_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F99B1A51EC9CBB100EE42E9 /* CategoryItem_1.json */; };
+		0F99B1A91EC9CBB100EE42E9 /* CategoryItem_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F99B1A61EC9CBB100EE42E9 /* CategoryItem_2.json */; };
+		0F99B1AA1EC9CBB100EE42E9 /* CategoryItem_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F99B1A71EC9CBB100EE42E9 /* CategoryItem_3.json */; };
 		0FD2C7DC1EC079B3004253D1 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD2C7DB1EC079B3004253D1 /* MapVC.swift */; };
 		0FD2C7DE1EC079CF004253D1 /* CreateListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD2C7DD1EC079CF004253D1 /* CreateListVC.swift */; };
 		0FD2C7E01EC07A2A004253D1 /* IteamsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD2C7DF1EC07A2A004253D1 /* IteamsListVC.swift */; };
@@ -59,6 +63,15 @@
 		0F0256F31EB38180008D50AC /* MBagPackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBagPackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0256F71EB38180008D50AC /* MBagPackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBagPackUITests.swift; sourceTree = "<group>"; };
 		0F0256F91EB38180008D50AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F5D29F31ECADBEA004F3E7D /* MBagPack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MBagPack.entitlements; sourceTree = "<group>"; };
+		0F5D29F51ECB707F004F3E7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		0F5D29F71ECB72A8004F3E7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MBagPack/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0F5D29F91ECB74B9004F3E7D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		0F5D29FA1ECB74B9004F3E7D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0F5D29FB1ECB74B9004F3E7D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = MBagPack/de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0F99B1A51EC9CBB100EE42E9 /* CategoryItem_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CategoryItem_1.json; sourceTree = "<group>"; };
+		0F99B1A61EC9CBB100EE42E9 /* CategoryItem_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CategoryItem_2.json; sourceTree = "<group>"; };
+		0F99B1A71EC9CBB100EE42E9 /* CategoryItem_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CategoryItem_3.json; sourceTree = "<group>"; };
 		0FD2C7DB1EC079B3004253D1 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		0FD2C7DD1EC079CF004253D1 /* CreateListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateListVC.swift; sourceTree = "<group>"; };
 		0FD2C7DF1EC07A2A004253D1 /* IteamsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IteamsListVC.swift; sourceTree = "<group>"; };
@@ -106,6 +119,7 @@
 		0F0256C81EB38180008D50AC = {
 			isa = PBXGroup;
 			children = (
+				0F5D29F61ECB72A8004F3E7D /* Localizable.strings */,
 				0F0256D31EB38180008D50AC /* MBagPack */,
 				0F0256EB1EB38180008D50AC /* MBagPackTests */,
 				0F0256F61EB38180008D50AC /* MBagPackUITests */,
@@ -128,6 +142,8 @@
 		0F0256D31EB38180008D50AC /* MBagPack */ = {
 			isa = PBXGroup;
 			children = (
+				0F5D29F31ECADBEA004F3E7D /* MBagPack.entitlements */,
+				0F99B1A41EC9CB9D00EE42E9 /* CatFiles */,
 				0FD2C7E71EC0FF7B004253D1 /* Cell */,
 				0FD2C7E61EC0F544004253D1 /* pdf */,
 				0FD2C7E31EC085AC004253D1 /* Helper */,
@@ -162,6 +178,16 @@
 				0F0256F91EB38180008D50AC /* Info.plist */,
 			);
 			path = MBagPackUITests;
+			sourceTree = "<group>";
+		};
+		0F99B1A41EC9CB9D00EE42E9 /* CatFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0F99B1A51EC9CBB100EE42E9 /* CategoryItem_1.json */,
+				0F99B1A61EC9CBB100EE42E9 /* CategoryItem_2.json */,
+				0F99B1A71EC9CBB100EE42E9 /* CategoryItem_3.json */,
+			);
+			name = CatFiles;
 			sourceTree = "<group>";
 		};
 		0FD2C7E31EC085AC004253D1 /* Helper */ = {
@@ -289,6 +315,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = FS58X3J7RU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 					0F0256E71EB38180008D50AC = {
 						CreatedOnToolsVersion = 8.0;
@@ -309,6 +340,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 0F0256C81EB38180008D50AC;
 			productRefGroup = 0F0256D21EB38180008D50AC /* Products */;
@@ -327,6 +359,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F99B1A81EC9CBB100EE42E9 /* CategoryItem_1.json in Resources */,
+				0F99B1A91EC9CBB100EE42E9 /* CategoryItem_2.json in Resources */,
+				0F99B1AA1EC9CBB100EE42E9 /* CategoryItem_3.json in Resources */,
+				0F5D29F81ECB72A8004F3E7D /* Localizable.strings in Resources */,
 				0F0256E21EB38180008D50AC /* LaunchScreen.storyboard in Resources */,
 				0F0256DF1EB38180008D50AC /* Assets.xcassets in Resources */,
 				0F0256DA1EB38180008D50AC /* Main.storyboard in Resources */,
@@ -540,6 +576,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F0256D91EB38180008D50AC /* Base */,
+				0F5D29F51ECB707F004F3E7D /* en */,
+				0F5D29F91ECB74B9004F3E7D /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -548,8 +586,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F0256E11EB38180008D50AC /* Base */,
+				0F5D29FA1ECB74B9004F3E7D /* de */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0F5D29F61ECB72A8004F3E7D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F5D29F71ECB72A8004F3E7D /* en */,
+				0F5D29FB1ECB74B9004F3E7D /* de */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -559,6 +607,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -608,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -651,12 +701,15 @@
 			baseConfigurationReference = 4492CF5FD8BCA7477E05F7B3 /* Pods-MBagPack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FS58X3J7RU;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MBagPack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kTeck.MBagPack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -666,12 +719,15 @@
 			baseConfigurationReference = AF8864DE5549FA2A609E0358 /* Pods-MBagPack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FS58X3J7RU;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MBagPack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kTeck.MBagPack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

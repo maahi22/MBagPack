@@ -18,6 +18,88 @@ class DbHelper: NSObject {
 
 
     
+    /*public func AddCategory1 (item : NSDictionary , callback:((_ Result :Bool) -> Void)){
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.getContext()
+        
+        
+      //  for item in list {
+            
+            
+            //retrieve the entity that we just created
+            let entity =  NSEntityDescription.entity(forEntityName: "CategoryItem1", in: context)
+            let manageObj = NSManagedObject(entity: entity!, insertInto: context)
+            
+            //set the entity values
+        
+        let propertyValue =  item.value(forKey: "gender") as int
+        
+        manageObj.setValue( Int(propertyValue), forKey: "gender")
+            manageObj.setValue(item.value(forKey: "gen_Woman"), forKey: "gen_Woman")
+            manageObj.setValue(item.value(forKey: "gen_Man"), forKey: "gen_Man")
+            manageObj.setValue(item.value(forKey: "itemCat"), forKey: "itemCat")
+        
+        manageObj.setValue(item.value(forKey: "purpose"), forKey: "purpose")
+        manageObj.setValue(item.value(forKey: "itemName_Eng"), forKey: "itemName_Eng")
+        manageObj.setValue(item.value(forKey: "itemName_Ger"), forKey: "itemName_Ger")
+        manageObj.setValue(item.value(forKey: "itemName_Ita"), forKey: "itemName_Ita")
+        manageObj.setValue(item.value(forKey: "itemName_Span"), forKey: "itemName_Span")
+        manageObj.setValue(item.value(forKey: "purpose_Buss"), forKey: "purpose_Buss")
+        manageObj.setValue(item.value(forKey: "purpose_Leisure"), forKey: "purpose_Leisure")
+        manageObj.setValue(item.value(forKey: "temperature_Heigh"), forKey: "temperature_Heigh")
+        manageObj.setValue(item.value(forKey: "temperature_less"), forKey: "temperature_less")
+        manageObj.setValue(item.value(forKey: "temperature_Medium"), forKey: "temperature_Medium")
+        manageObj.setValue(item.value(forKey: "temprature"), forKey: "temprature")
+        
+
+            //save the object
+            do {
+                try context.save()
+                print("saved!")
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
+            } catch {
+                
+            }
+  
+            
+            
+     //   }
+        
+        
+        
+        callback(true)
+        
+    }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public func AddTripList (tripData :NSDictionary , callback:((_ Result :Bool) -> Void)){
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate

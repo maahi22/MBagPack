@@ -11,7 +11,8 @@ import CoreData
 import Social
 import MessageUI
 import Messages
-
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController,UIActionSheetDelegate,MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate {
 
@@ -24,11 +25,13 @@ class ViewController: UIViewController,UIActionSheetDelegate,MFMailComposeViewCo
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.navigationItem.title = NSLocalizedString("navTitle1", comment: "navTitle1")
+        
         
 //        let navigationBarAppearace = UINavigationBar.appearance()
 //        navigationBarAppearace.tintColor = UIColor(red:255.0/255.0, green:111.0/255.0, blue:64.0/255.0, alpha:1.0)
         
-        
+        self.loadCategory()
         
         if DbHelper.sharedInstance.getPlaceListFromDB().count > 0 {
             tripList = NSMutableArray(array: DbHelper.sharedInstance.getPlaceListFromDB() )as! NSMutableArray
@@ -51,9 +54,9 @@ class ViewController: UIViewController,UIActionSheetDelegate,MFMailComposeViewCo
     @IBAction func shareClick(_ sender: AnyObject) {
         
         //Create the AlertController and add Its action like button in Actionsheet
-        let actionSheetControllerIOS8: UIAlertController = UIAlertController(title: " Share", message: "", preferredStyle: .actionSheet)
+        let actionSheetControllerIOS8: UIAlertController = UIAlertController(title: NSLocalizedString("share", comment: "share"), message: "", preferredStyle: .actionSheet)
         
-        let cancelActionButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+        let cancelActionButton = UIAlertAction(title: NSLocalizedString("cancelActionButton", comment: "CancelBtn"), style: .cancel) { _ in
             print("Cancel")
         }
     
@@ -81,14 +84,14 @@ class ViewController: UIViewController,UIActionSheetDelegate,MFMailComposeViewCo
         actionSheetControllerIOS8.addAction(twitterButton)
         
         
-        let EmailButton = UIAlertAction(title: "Email", style: .default)
+        let EmailButton = UIAlertAction(title: NSLocalizedString("EmailActionButton", comment: "Emailbtn"), style: .default)
         { _ in
             print("mail")
              self.sendMail(text: "hii");
         }
         actionSheetControllerIOS8.addAction(EmailButton)
         
-        let SMSButton = UIAlertAction(title: "SMS", style: .default)
+        let SMSButton = UIAlertAction(title: NSLocalizedString("SMSActionButton", comment: "SMSbtn"), style: .default)
         { _ in
             print("message")
             self.sendSMS(text: "hii");
@@ -237,6 +240,65 @@ class ViewController: UIViewController,UIActionSheetDelegate,MFMailComposeViewCo
             }
         }
     }
+    
+    
+    
+    
+    
+    
+    //Insert Core Data category
+    
+    func loadCategory()  {
+        
+        /*let documentsPath = NSURL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.bu, .userDomainMask, true)[0])
+        let textFileURL = documentsPath.appendingPathComponent("resource/data/introduction")
+        let fileURLString = textFileURL?.path*/
+        
+        let fileURLString = Bundle.main.path(forResource: "CategoryItem_1",ofType:"json")
+        
+        
+        
+        if FileManager.default.fileExists(atPath: (fileURLString)!){
+            print("success")
+        }
+        if let path = Bundle.main.path(forResource: "CategoryItem_1" , ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+                
+                let json = JSON(data: data)
+                
+                for item in json["features"].arrayValue {
+                    print(item["properties"].dictionaryValue)
+                
+                
+                /*DbHelper.sharedInstance.AddCategory1(item: item["properties"].dictionaryValue as NSDictionary, callback: { (success) in
+                    
+                    print("saved")
+                })*/
+                    
+                    
+                   
+                
+                }
+                /*let jsonObj = JSONSerializer.toJson(data)
+                print(jsonObj)*/
+            } catch let error {
+                print(error.localizedDescription)
+            }
+       
+        
+        
+        
+        
+        } else {
+            print("Invalid filename/path.")
+        }
+        
+        
+    }
+    
+    
+    
     
 }
 

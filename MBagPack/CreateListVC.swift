@@ -23,6 +23,9 @@ class CreateListVC: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationItem.title = NSLocalizedString("navCreateList", comment: "navCreateList")
+        
+        
         // Do any additional setup after loading the view.
     }
 
